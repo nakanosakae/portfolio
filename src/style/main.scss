@@ -1,0 +1,153 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.impact-font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.times-font{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@mixin md {
+    @media (min-width: 720px) { @content; }
+}
+
+@mixin lg {
+    @media (min-width: 960px) { @content; }
+}
+
+
+.black-blue{
+    color: #1b435d;
+}
+
+.blue-white{
+    color: #cfe2f3ff;
+}
+
+.black{
+    color: #434343;
+}
+
+.accent-red{
+    color: #cc0000;
+}
+
+.index-margin{
+    margin-top: 40%;
+}
+
+.skills-wrapper{
+    @include md{
+        margin: 40% 10% 0 10%;
+    }
+}
+
+.background_0,.background_1{
+    width:100%;
+    height: 1334px;
+    background-repeat: repeat-x;
+    background-size:100% auto;
+    @include md{
+        background-size: 50% auto;
+    }
+
+    @include lg {
+        background-size: 25% auto;
+    }
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+.background-container{
+    position: relative;
+}
+
+.background_0{
+    position: absolute;
+    top: -120%;
+    z-index: -100;
+    @include md{
+        top: -200%;
+    }
+
+    @include lg{
+        top: -300%;
+    }
+}
+
+.background_1{
+    position: absolute;
+    top: -90%;
+    @include md{
+        top: -150%;
+    }
+
+    @include lg{
+        top: -250%;
+    }
+}
+
+.port-folio-text{
+    position: relative;
+    z-index: 100;
+    @include lg{
+        top:-80px;
+    }
+}
+
+.sea{
+    background-color:#1b435d ;
+    position: relative;
+    top: -60px;
+    background-repeat: repeat;
+    background-size:100% auto;
+    @include md{
+        background-size: 50% auto;
+    }
+
+    @include lg {
+        background-size: 25% auto;
+        
+        top: -430px;
+    }
+}
+
+#bird{
+    @include lg{
+        width: 50%;
+    }
+}
+
+.bg-name-sakae{
+    background-color:  #cfe2f3ff;
+    margin: 0 30% 0 30%;
+}
+
+.skills{
+    border: thick solid #cfe2f3ff;
+    border-radius: 1em;
+    padding:10px;
+    span{
+        border: medium solid #cfe2f3ff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+        display: inline-block;;
+    }
+}
+
+.head-index{
+    @include md{
+        font-size: xx-large;
+    }
+}
+
+
+
+.footer{
+    background-color: #434343;
+}
